@@ -3,6 +3,8 @@ package springbasic.core.member;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.*;
+
 public class MemberServiceTest {
 
     private final MemberService memberService = new MemberServiceImpl();
@@ -17,6 +19,6 @@ public class MemberServiceTest {
         Member findMember = memberService.findMember(1L);
 
         //then
-        Assertions.assertThat(memberA).isEqualTo(findMember);
+        assertThat(memberA).isEqualTo(findMember);
     }
 }
