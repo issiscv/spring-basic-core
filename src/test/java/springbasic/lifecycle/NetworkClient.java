@@ -1,7 +1,4 @@
-package lifecycle;
-
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
+package springbasic.lifecycle;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
